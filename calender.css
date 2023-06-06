@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00FFFFFF;
+    margin: 0;
+    padding: 20px;
+    background-image: url("https://res.cloudinary.com/dib3yhzbb/image/upload/v1685977925/crop_image_rvw9lk.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+  }
+  
+  h1 {
+    text-align: center;
+    color: chartreuse;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccccccdb;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+  
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+  .button{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 50%;
+    margin: 5%;
+    padding: 10px;
+    border: 50px;
+    background-color: #005ccc;
+}

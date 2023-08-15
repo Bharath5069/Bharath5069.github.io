@@ -1,0 +1,654 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="store.js" async></script>
+  <title>Document</title>
+  <style>
+   
+      
+  </style>
+</head>
+<body>
+    
+ 
+
+    <div class="container">
+
+        
+    <div class="row carousel-row py-3">
+        <div class="col-md-12">
+          <h2 class="h2-responsive shadow py-3">Featured <b>Products</b></h2>
+          <div id="myCarousel" class="carousel store-carousel slide" data-ride="carousel" data-interval="0">
+          
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>   
+          
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683021650/sp1_pwauyo.jpg" class="img-responsive img-fluid" alt="">									
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Intrepid</h4>									
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                      <a href="#" class="btn btn-primary"><button onclick="addToCart('Product 2')">Add to Cart</button></a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683021885/sp2_etmzi4.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Ambition</h4>									
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <p class="item-price"><strike>Rs460.00</strike> <b>Rs430.99</b></p>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>		
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683022014/sp3_uvscxu.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Buonos</h4>									
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                      </div>
+                      <p class="item-price"><strike>Rs899.00</strike> <b>Rs649.00</b></p>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>								
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683022012/sp4_uij9cy.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Alanto</h4>									
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <p class="item-price"><strike>Rs315.00</strike> <b>Rs250.00</b></p>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dtlezyr4j/image/upload/v1683021997/1_5_04481641-dbaf-4d72-9fab-115c08ba9b02_lywr26.webp" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Sivanto</h4>
+                      <p class="item-price"><strike>Rs289.00</strike> <span>Rs269.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683143410/IMG-20230504-WA0007_rtjd2w.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Regent</h4>
+                      <p class="item-price"><strike>Rs1099.00</strike> <span>Rs869.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683143410/IMG-20230504-WA0008_xnvqmt.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Aliette</h4>
+                      <p class="item-price"><strike>Rs109.00</strike> <span>Rs99.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683143397/IMG-20230504-WA0009_idgdqq.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Confidor</h4>
+                      <p class="item-price"><strike>Rs599.00</strike> <span>Rs569.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>						
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683143397/IMG-20230504-WA0010_u8qdp4.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Admire</h4>
+                      <p class="item-price"><strike>Rs369.00</strike> <span>Rs349.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683143396/IMG-20230504-WA0011_esdpwy.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Spintor</h4>
+                      <p class="item-price"><strike>Rs315.00</strike> <span>Rs250.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683143396/IMG-20230504-WA0012_iskfcp.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Lesenta</h4>
+                      <p class="item-price"><strike>Rs450.00</strike> <span>Rs418.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>	
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                      <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683143440/WhatsApp_Image_2023-05-04_at_01.18.33_ien3lj.jpg" class="img-responsive img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Fame</h4>
+                      <p class="item-price"><strike>Rs350.00</strike> <span>Rs330.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+        </div>
+      </div>
+      
+
+
+
+        <div class="col-md-12 store-items-col">
+            <h2 class="store-items-heading h2-responsive shadow py-2">Just <b>In</b></h2>
+           
+      
+                <div class="store-items">
+                  <div class="row store-row-2 py-3">
+
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                          <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                          <div class="img-box">
+                              <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683139697/IMG-20230503-WA0007_ieagto.jpg" class="img-responsive img-fluid" alt="">									
+                          </div>
+                          <div class="thumb-content">
+                              <h4 class="h4-responsive">Movento</h4>									
+                              <div class="star-rating">
+                                  <ul class="list-inline">
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                  </ul>
+                              </div>
+                              <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>						
+                      </div>                      
+          </div>
+          
+
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                        <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683139697/IMG-20230503-WA0008_mxkobm.jpg" class="img-responsive img-fluid" alt="">									
+                    </div>
+                    <div class="thumb-content">
+                        <h4 class="h4-responsive">Jump</h4>									
+                        <div class="star-rating">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                        </div>
+                        <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                </div>                     
+    </div>
+    
+
+    <div class="col-sm-3">
+      <div class="thumb-wrapper">
+          <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+          <div class="img-box">
+              <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683139697/IMG-20230503-WA0009_drdtqa.jpg" class="img-responsive img-fluid" alt="">									
+          </div>
+          <div class="thumb-content">
+              <h4 class="h4-responsive">Antracol</h4>									
+              <div class="star-rating">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                  </ul>
+              </div>
+              <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>						
+      </div>              
+    </div>
+   
+
+    <div class="col-sm-3">
+      <div class="thumb-wrapper">
+          <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+          <div class="img-box">
+              <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683139697/IMG-20230503-WA0010_uay9uj.jpg" class="img-responsive img-fluid" alt="">									
+          </div>
+          <div class="thumb-content">
+              <h4 class="h4-responsive">Cauliflower</h4>									
+              <div class="star-rating">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                  </ul>
+              </div>
+              <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>						
+      </div>            
+    </div>
+   
+                  </div>
+                  
+                  <div class="row store-row-3 py-3">
+
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                          <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                          <div class="img-box">
+                              <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683140068/IMG-20230503-WA0011_lwehur.jpg" class="img-responsive img-fluid" alt="">									
+                          </div>
+                          <div class="thumb-content">
+                              <h4 class="h4-responsive">Carrot</h4>									
+                              <div class="star-rating">
+                                  <ul class="list-inline">
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                  </ul>
+                              </div>
+                              <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                          </div>						
+                      </div>                      
+          </div>
+         
+
+              <div class="col-sm-3">
+                <div class="thumb-wrapper">
+                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                    <div class="img-box">
+                        <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683139697/IMG-20230503-WA0012_ycm3pc.jpg" class="img-responsive img-fluid" alt="">									
+                    </div>
+                    <div class="thumb-content">
+                        <h4 class="h4-responsive">Corn</h4>									
+                        <div class="star-rating">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                        </div>
+                        <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>						
+                </div>                     
+    </div>
+    
+
+    <div class="col-sm-3">
+      <div class="thumb-wrapper">
+          <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+          <div class="img-box">
+              <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683139698/IMG-20230503-WA0013_qjh9ex.jpg" class="img-responsive img-fluid" alt="">									
+          </div>
+          <div class="thumb-content">
+              <h4 class="h4-responsive">Garlic</h4>									
+              <div class="star-rating">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                  </ul>
+              </div>
+              <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>						
+      </div>              
+    </div>
+   
+
+    <div class="col-sm-3">
+      <div class="thumb-wrapper">
+          <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+          <div class="img-box">
+              <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683139698/IMG-20230503-WA0014_it7j5u.jpg" class="img-responsive img-fluid" alt="">									
+          </div>
+          <div class="thumb-content">
+              <h4 class="h4-responsive">Ginger</h4>									
+              <div class="star-rating">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                  </ul>
+              </div>
+              <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>						
+      </div>            
+    </div>
+   
+                  </div>
+                 
+                    <div class="row store-row-3 py-3">
+  
+                      <div class="col-sm-3">
+                        <div class="thumb-wrapper">
+                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                            <div class="img-box">
+                                <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683141027/mushroom_q3pq5k.jpg" class="img-responsive img-fluid" alt="">									
+                            </div>
+                            <div class="thumb-content">
+                                <h4 class="h4-responsive">Mushroom</h4>									
+                                <div class="star-rating">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                </div>
+                                <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>						
+                        </div>                      
+            </div>
+          
+  
+                <div class="col-sm-3">
+                  <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <div class="img-box">
+                          <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683141026/betroot_ycknla.jpg" class="img-responsive img-fluid" alt="">									
+                      </div>
+                      <div class="thumb-content">
+                          <h4 class="h4-responsive">Beetroot</h4>									
+                          <div class="star-rating">
+                              <ul class="list-inline">
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                              </ul>
+                          </div>
+                          <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>						
+                  </div>                     
+      </div>
+      
+      <div class="col-sm-3">
+        <div class="thumb-wrapper">
+            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+            <div class="img-box">
+                <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683141489/Organic_up0ovj.jpg" class="img-responsive img-fluid" alt="">									
+            </div>
+            <div class="thumb-content">
+                <h4 class="h4-responsive">Natures Plus</h4>									
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
+                <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>						
+        </div>              
+      </div>
+      
+  
+      <div class="col-sm-3">
+        <div class="thumb-wrapper">
+            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+            <div class="img-box">
+                <img src="https://res.cloudinary.com/dqeekelva/image/upload/v1683141200/wheat_fkzgi8.jpg" class="img-responsive img-fluid" alt="">									
+            </div>
+            <div class="thumb-content">
+                <h4 class="h4-responsive">Wheat</h4>									
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
+                <p class="item-price"><strike>Rs400.00</strike> <b>Rs369.00</b></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+
+        </div>            
+      </div>
+
+                    </div>
+                    
+               
+                    </div>
+                    
+                </div>
+                
+                  
+                <button class="store-button" ><a class="nav-link" href="C:\Users\BHARATH SIVA SAI\OneDrive\Desktop\s\index.html">Back</a></button>
+                <button class="store-button" ><a class="nav-link" href="C:\Users\BHARATH SIVA SAI\special topic\s\cart.html">Cart</a></button>
+                  
+                </div>
+             
+
+
+
+
+    
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
